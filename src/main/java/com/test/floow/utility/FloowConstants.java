@@ -17,5 +17,6 @@ public class FloowConstants {
 	public static final String ID_STRING = "stringSearch";
 	public static final String SOURCE_FILENAME = "fileName";
 	public static final String DBNAME ="FloowTest";
+	public static final String QTA ="qta";
 	
 }

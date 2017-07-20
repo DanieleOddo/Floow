@@ -42,6 +42,7 @@ public class MyRunnable implements Runnable{
 	    			System.out.println("File not present: " + configArgs.get(FloowConstants.SOURCE_FILENAME));
 	        	} else {
 	        		Long result = read.readFileLocal(configArgs);
+	        		configArgs.put("qta", result.toString());
 	        		System.out.println("-----------------------------------------------------------------------------------------");
 	        		System.out.println("-- Report ");
 	        		System.out.println("-- I Found the string: " +configArgs.get(FloowConstants.ID_STRING) +" inside file Total :"  +result);
