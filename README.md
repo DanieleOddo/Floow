@@ -22,10 +22,29 @@
  
 ## Test Executed 
  1) First Test with a very small file with 3 line 
+    Command i Doing :
+    java -jar floow-0.0.1-SNAPSHOT-jar-with-dependencies.jar -source prova.txt -mongo localhost:27017 -id local localhost/user Daniele
+    
+       
  2) I Used, in local machine, the Dump file of wikipedia.
  
  I attached in the project 2 Jpg file with a Example of Execution and MongoDB Result.
  
-    
+### Create Jar Runnable 
+   
+   For create Runnable jar simple : click on file pom.xml select mvn build with goal : assembly:single 
+   
+### Command accepted for execution :
+ java -jar floow-0.0.1-SNAPSHOT-jar-with-dependencies.jar -source nameFIle -mongo mogoHostname:mongoPort -id nameServer NomeHost/userName stringToSearch
+ 
+ Where in my local Example : 
+ -nameFile : prova.txt (with a 2 or 3 line with a right string to search)
+ -mongoHostname : localhost (i have on notebook installed MongoDB
+ -mongoPort : 27017 (Std port of mongo)
+ -nameServer : local (to find file inside "C:/Floow/local/")  other name for connected in FTP with a serverFTP
+ -NomeHost : localhost (in local) server IpAdress for connect in FTP
+ -userName : user FTP valid with password = userName
+ -stringToSearch : string to search inside file
+  
   PS. Excuse me for many mistake i did with this note.... I'm Italian and sometime i using 
       italian grammatic for write the sentence!! :-)))
